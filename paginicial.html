@@ -258,6 +258,25 @@
     </div>
 </section>
 </main>
+<section class="form-container">
+    <hr class="titleline3">
+    <h1>RESERVE <span>SUA MESA</span></h1>
+    <form action="#" method="post" class="reservation-form">
+        <div class="form-group">
+            <input type="text" name="nome" placeholder="NOME" required>
+            <input type="email" name="email" placeholder="EMAIL" required>
+        </div>
+        <div class="form-group">
+            <input type="date" name="data" placeholder="dd / mm / aaaa" required>
+            <input type="time" name="horario" placeholder="HORÁRIO" required>
+        </div>
+        <div class="form-group">
+            <input type="number" name="quantidade" placeholder="QUANTIDADE DE PESSOAS" required>
+        </div>
+        <button type="submit" class="submit-button">ENVIAR</button>
+    </form>
+</section>
+
 <footer class="footer">
     <div>
         <div>
@@ -278,18 +297,17 @@
                     <p>tasteofarabia.restaurante@gmail.com</p>
                 </div>
                 <div class="botao">
-                    <button onclick="location.href='pedidos.html'">Enviar</button>
+                    <button onclick="enviarEmail()">Enviar</button>
                 </div>
+                
 
                 <div class="redes">
                     <img src="fotos2/whats.png" alt="">
                     <img src="fotos2/insta.png" alt="">
                     <img src="fotos2/face.png" alt="">
                 </div>
-
-
+            </section>
+        </div>
+    </div>
+    <script src="/gmail/gmail.js"></script>
 </footer>
-</section>
-</body>
-
-</html>

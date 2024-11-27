@@ -775,3 +775,85 @@ h1 {
 .ring {
     display: flex;
 }
+
+/* Seção de Reserva */
+
+hr.titleline3 {
+    border: 0;
+    height: 2px;
+    /* espessura da linha */
+    background-color: black;
+    width: 50%;
+    /*ajusta a largura conforme necessário */
+    margin: 10px auto 50px;
+    /* centraliza e adiciona espaçamento */
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin-left: 465px;
+}
+
+h1.form-container {
+    font-size: 28px;
+    font-weight: 700;
+    color: #8e715c;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #000;
+}
+
+.reservation-form {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input::placeholder {
+    color: #aaa;
+    font-weight: bold;
+}
+
+/* Botão ENVIAR */
+.submit-button {
+    width: 560px;
+    padding: 12px;
+    margin-left: -0%;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ca7718;
+    color: #fff;
+    cursor: pointer;
+    transition:  0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+    background-color: #8a6a4a;
+    transform: translateY(1px);
+    scale: 1.03;
+}

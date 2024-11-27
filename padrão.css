@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #D7C3AF;
+}
+
 @font-face {
     font-family: "Montserrat";
     src: url(/Mont/Montserrat-Regular.ttf);

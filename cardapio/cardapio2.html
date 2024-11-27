@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PRATOS PRINCIPAIS</title>
     <link rel="stylesheet" href="cardapio2.css">
+    <link rel="stylesheet" href="/carrinho/carrinho.css">
+    <link rel="stylesheet" href="padrões.css">
     <link rel="shortcut icon" href="/fotos2/logo.png" type="image/x-icon">
 </head>
 <body>
@@ -23,8 +25,16 @@
             </nav>
         </section>
         <section class="login">
-            <a href="/enviar/enviar.html">Login</a>
-                <button class="agora">Pedir agora</button>
+            <div class="cart-container" onclick="toggleCartDropdown()">
+                <img src="/fotos2/carrinho.png" alt="Carrinho" class="cart-icon">
+                <span id="cart-counter">0</span> <!-- Contador de itens -->
+            </div>
+            <!-- Dropdown do carrinho -->
+            <div id="cart-dropdown" class="cart-dropdown">
+                <h3>Itens no Carrinho:</h3>
+                <ul id="cart-items"></ul>
+                <button onclick="finalizarPedido()">Finalizar Pedido</button>
+            </div>
         </section>  
       
     </section>
@@ -208,5 +218,7 @@
      
     </footer>
  </section>
+ <script src="/carrinho/carrinho.js"></script>
+ <script src="/gmail/gmail.js"></script>
 </body>
 </html>

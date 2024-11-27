@@ -30,3 +30,9 @@ a {
     text-decoration: none;
     gap: 30px;
 }
+
+
+.cart-dropdown h3 {
+    color: black;
+    font-size: 20px;
+}

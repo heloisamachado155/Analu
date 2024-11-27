@@ -6,15 +6,19 @@
 
 
 }
-
 @font-face {
     font-family: "Montserrat";
-    src: url('Montserrat/Montserrat-VariableFont_wght.ttf');
+    src: url(/Mont/Montserrat-Regular.ttf);
 }
 
 @font-face {
-    font-family: "SemiBold";
-    src: url('Montserrat/static/Montserrat-SemiBold.ttf');
+    font-family: "bold";
+    src: url(/Mont/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Semibold";
+    src: url(Mont/Montserrat-SemiBold.ttf);
 }
 
 body {
@@ -53,12 +57,13 @@ header {
     background-image: url(/Ana/menu.png);
     height: 500px;
     background-color: rgba(0, 0, 0, 0.433);
+    filter: grayscale(55%) brightness(90%); /* Filtro de escala de cinza e brilho */
+
 }
 
 h1 {
     color: #fff;
     font-size: 64px;
-    font-family: "SemiBold";
     justify-content: center;
     align-items: center;
     display: flex;
@@ -68,7 +73,7 @@ h1 {
 }
 
 h3 {
-    font-family: "bold";
+    font-family: "Semibold";
     color: white;
     font-size: 40px;
     width: 598px;
@@ -77,18 +82,6 @@ h3 {
 
 .header nav a:hover {
     color: #e0a848;
-}
-
-.login {
-    display: flex;
-    align-items: center;
-}
-
-.login-link {
-    color: #fff;
-    margin-right: 15px;
-    text-decoration: none;
-    font-size: 16px;
 }
 
 .order-button {

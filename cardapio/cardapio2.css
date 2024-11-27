@@ -3,17 +3,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat";
-    
-   
-} 
+
+
+}
+
 @font-face {
-        font-family:"Montserrat";
-        src: url('Montserrat/Montserrat-VariableFont_wght.ttf');
-    }
-    @font-face {
-        font-family: "SemiBold";
-        src: url('Montserrat/static/Montserrat-SemiBold.ttf');
-    }
+    font-family: "Montserrat";
+    src: url(/Mont/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(/Mont/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Semibold";
+    src: url(Mont/Montserrat-SemiBold.ttf);
+}
 
 body {
     background-color: #D4C2AE;
@@ -30,8 +37,8 @@ body {
     width: 100%;
     height: 100px;
     padding: 20px;
-    background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.48) 24%, rgba(0,0,0,0.7344187675070029) 49%, rgba(0,0,0,0.9501050420168067) 93%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.48) 24%, rgba(0, 0, 0, 0.7344187675070029) 49%, rgba(0, 0, 0, 0.9501050420168067) 93%);
 }
 
 #header img {
@@ -45,38 +52,31 @@ background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.48) 24%, 
     text-decoration: none;
     font-size: 16px;
 }
-header{
+
+header {
     background-size: cover;
     background-image: url(/Ana/pp.png);
     height: 500px;
     background-color: rgba(0, 0, 0, 0.433);
-}
-h1{
-    color: #fff;
-  font-size: 64px;
-  font-family: "SemiBold";
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-top: 150px;
-  text-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    filter: grayscale(55%) brightness(90%); /* Filtro de escala de cinza e brilho */
 
 }
+
+h1 {
+    color: #fff;
+    font-size: 64px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 150px;
+    text-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
 .header nav a:hover {
     color: #e0a848;
 }
 
-.login {
-    display: flex;
-    align-items: center;
-}
-
-.login-link {
-    color: #fff;
-    margin-right: 15px;
-    text-decoration: none;
-    font-size: 16px;
-}
 
 .order-button {
     padding: 10px 20px;
@@ -97,19 +97,19 @@ h1{
     width: 100%;
 }
 
-    .linha{
-        background-color: #4f382095;
-        height: 2px;                                                                                                                                                        
-        margin-top: 80px;
-        margin-left:285px;
-        width: 940px;
+.linha {
+    background-color: #4f382095;
+    height: 2px;
+    margin-top: 80px;
+    margin-left: 285px;
+    width: 940px;
 
-    }
+}
 
 
-.container{
+.container {
     background-color: #B68A5A;
-    width:990px;
+    width: 990px;
     height: 230px;
     border-color: #624423;
     border-radius: 9.12px;
@@ -119,93 +119,107 @@ h1{
     margin-left: 260px;
     margin-top: 80px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    
-    
+
+
 }
 
-.comida img{
+.comida img {
     width: 190px;
     margin-top: 18px;
     margin-left: 18px;
     margin-bottom: 18px;
 }
-.comida h3{
-    font-family: "SemiBold";
+
+.comida h3 {
+    font-family: "bold";
     font-size: 30px;
     margin-left: 10px;
     margin-top: 20px;
-  
+
 }
-.juntos p{
+
+.juntos p {
     font-family: "Montserrat";
     font-size: 16px;
     margin-right: 10px;
     margin-left: 15px;
     margin-top: 30px;
     margin-bottom: 25px;
-   text-align: justify;
-   top: 100px;
-    
+    text-align: justify;
+    top: 100px;
+
 }
-.preco h4{
+
+.preco h4 {
     font-family: "SemiBold";
     font-size: 18px;
     margin-right: 50px;
     margin-bottom: 10px;
-    text-align:left;
+    text-align: left;
 }
 
 
-.comida{
-    justify-content:center;
-    align-items:flex-end;
-    display:flex;
-    
+.comida {
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+
 }
-footer{
+
+footer {
     background-image: url(/fotos2/footer.png);
     width: 1519px;
     height: 637px;
     padding: 20px;
     margin-top: 100px;
 }
-.duvidas, .duvidass{
-    justify-content:center;
+
+.duvidas,
+.duvidass {
+    justify-content: center;
     align-items: top;
     display: flex;
 }
-.duvidas p{
+
+.duvidas p {
     font-size: 60px;
     font-family: "Montserrat";
 }
-.fale{
-    justify-content:center;
+
+.fale {
+    justify-content: center;
     align-items: center;
     display: flex;
     margin-top: 120px;
     margin-right: 690px;
 }
-.falee{
-    justify-content:center;
+
+.falee {
+    justify-content: center;
     align-items: center;
     display: flex;
     margin-top: 20px;
     margin-right: 600px;
 }
-.fale p{
+
+.fale p {
     font-size: 24px;
     margin-left: 20px;
 }
-.falee p{
+
+.falee p {
     font-size: 24px;
     margin-left: 20px;
 }
-.fale img{
+
+.fale img {
     width: 50px;
 }
-.falee img{
+
+.falee img {
     width: 50px;
 }
+
 .botao button {
     background-color: #D98A38;
     color: #ffffff;
@@ -224,10 +238,11 @@ footer{
 .botao button:hover {
     background-color: #c87a2e;
 }
-.redes{
-    justify-content:center;
+
+.redes {
+    justify-content: center;
     align-items: bottom;
     display: flex;
     margin-top: 134px;
-    
-    }
+
+}

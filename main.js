@@ -25,3 +25,5 @@ function avancar(){
 }
 //intervalo para autoavançar
 setInterval(avancar, 5000)
+
+
